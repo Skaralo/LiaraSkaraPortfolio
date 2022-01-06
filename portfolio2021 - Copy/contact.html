@@ -1,0 +1,153 @@
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liara Skara</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Montserrat&family=Orbitron:wght@400;500&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="styles.css">
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/> -->
+    <!-- <link rel="stylesheet" href="~/lib/Font-Awesome/css/fontawesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="~/lib/Font-Awesome/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body id="bodyContactpage">
+    <!-- <div class="line"></div> -->
+    <div class="container"></div>
+        <div class="nav-wrapper">
+
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            
+                <input type="checkbox" id="toggle"/>
+                    <label class="toggle-container" for="toggle">
+                        <span class="button button-toggle"></span>        
+                    </label>
+                    <nav class="nav">
+                        <a class="nav-item" href="index.html">Home</a>
+                        <a class="nav-item" href="about.html">About</a>
+                        <a class="nav-item" href="contact.html">Contact</a>
+                    </nav>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>Liara <span id="brandSpan">Skara</span></div>
+                    <img src="Images/LiaraKleinformaat.png" id="LiaraLogo">
+                </div>
+                <div class="discriptionAtLogo">Web Developer</div>
+            </div>
+
+        </div>
+
+        <!-- <div class="content-wrapper"> -->
+            <div class="contactPage">
+                <!-- <div class="backgroundEffect"> -->
+                    <div class="leftNav">
+                        <div class="nav-link-wrapper">
+                            <div id="hoverHome">
+                                <a href="index.html">
+                                <img class="homeIcon"src="Images/homeIcon.png" style="width: 130px; height: 60px;" alt="Home"></a>                            </div>
+                            <div class="clickHome"><a href="index.html">Home</a></div>
+                            
+                            <div id="hoverAbout">
+                                <a href="about.html">
+                                <img class="aboutIcon"src="Images/aboutIconpng.png" style="width: 150px; height: 72px;" alt="About"></a>  
+                            </div>
+                            <div class="clickAbout"><a href="about.html">About</a></div>
+                            <div id="hoverContact">
+                                <a href="contact.html">
+                                <img class="AtMessageIcon"src="Images/AtMessageIcon.png" style="width: 183px; height: 90px;" alt="Contact"></a>
+                                </div>
+                            <div class="clickContact"><a href="contact.html">Contact</a></div>                
+                        </div>
+                        <div class="contactIconsContactPage">
+                            <a href="https://github.com/Skaralo?tab=repositories" >
+                            <i class="fab fa-github fa-3x"></i></a>  
+                            <div class="emailIcon">
+                                <i class="fas fa-envelope fa-3x"></i>
+                            </div>
+                            <div class="emailAddress">Liaraskara@gmail.com</div>
+                        </div>
+                   </div>
+
+                <div class="mainContentContactPage">
+                    <div class="contactText">
+                        <div class="pageTitle" id="pageTitleContact"><h1>Contact</h1></div>
+                        <h5><span class="dot" id="dotContact">-</span>Let's talk<span class="dotTwo" id="dotTwoContact">-</span></h5>
+                        <div class="textPlusIcons">
+                               <p>I am interested in freelance opportunities. However if you have any other request or question, don't hesitate to contact me using the form either. We will be in touch within one business day.</p>
+                        </div>
+                        <div class="textContactMobile"><p>Do you have a question or do you want to work together?</p></div>
+                    </div>
+                        <form method="POST" class="contactForm" id="form">
+                            
+                            <!-- <div class="backgroundImg" style="background-image: url('Images/LiaraEyesOpen.png');"> -->
+                            <div class="form-control">
+                                <input class="name" id="namecontact" type="text" placeholder="Name" /><br>
+                                <i class="fas fa-exclamation-circle" id="exclamation1"></i>
+                                <small></small>
+                            </div>
+                            <div class="form-control">
+                                <input class="email" id="email" placeholder="E-mail"/><br>
+                                <i class="fas fa-exclamation-circle" id="exclamation2"></i>
+                                <small></small>
+                            </div>
+                            <div class="form-control">
+                                <input class="subject" type="text" placeholder="Subject"/><br>
+                                
+                            </div>
+                            <div class="form-control">
+                                <textarea class="message" id="message" cols="30" rows="10" placeholder="Message"></textarea><br>
+                                <i class="fas fa-exclamation-circle" id="exclamation4"></i>
+                                <small></small>
+                            </div>
+                            <button id="submitButton" type="submit">
+                                <span>Launch</span>
+                                <svg class="checkmark" viewBox="0 0 52 52">
+                                    <path fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+                                  </svg>
+                            </button>  
+                            </div>
+                        </form>
+                        <!-- <div id="alert" title="basic dialog" >
+                            <p>This is a basic dialog.</p>
+                        </div> -->
+
+                    <div class="contactIconsContactMobile">
+                        <a href="https://github.com/Skaralo?tab=repositories" >
+                        <i class="fab fa-github fa-3x"></i></a>  
+                        <div class="emailIcon" onclick="showEmail()">
+                            <i class="fas fa-envelope fa-3x"></i>
+                            <div class="emailAddress">Liaraskara@gmail.com</div>        
+                        </div>
+                        <div id="emailAddressMobile" onclick="showEmail()">Liaraskara@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+        <footer class="footerContactPage">
+                <div class="rights">
+                    Made with
+                    <span id="heart">♡</span> 
+                       <span id="rightsSpan">by Liara Skara, 2021</span></div>
+        </footer>
+    </div>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase.js"></script>
+<script src="myscript.js">
+</script>
+</body>
+</html>
