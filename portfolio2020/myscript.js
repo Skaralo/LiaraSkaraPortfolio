@@ -99,9 +99,9 @@ function showEmail() {
     databaseURL: "https://emaildata-17db3-default-rtdb.europe-west1.firebasedatabase.app",
     projectId: "emaildata-17db3",
     storageBucket: "emaildata-17db3.appspot.com",
-    messagingSenderId: "985706063821",
+    messagingSenderId: "#######",
     appId: "###########",
-    measurementId: "G-P7736PTCNX"
+    measurementId: "#####"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
@@ -160,7 +160,7 @@ function sendEmail(name, email, message) {
   Email.send({
     Host: "smtp.gmail.com",
     Username: "liaraskara@gmail.com",
-    Password: "abgzoisxxtiaizfl",
+    Password: "######",
     To: "liaraskara@gmail.com",
     From: "liaraskara@gmail.com",
     Subject: `${name} sent you a message`,
