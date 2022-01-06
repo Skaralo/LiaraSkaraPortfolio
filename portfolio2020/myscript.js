@@ -94,7 +94,7 @@ function showEmail() {
 // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   var firebaseConfig = {
-    apiKey: "AIzaSyBQ5nRRz0XwQgNgBjHAuz-ILGOUFS62zMk",
+    apiKey: "Key",
     authDomain: "emaildata-17db3.firebaseapp.com",
     databaseURL: "https://emaildata-17db3-default-rtdb.europe-west1.firebasedatabase.app",
     projectId: "emaildata-17db3",
