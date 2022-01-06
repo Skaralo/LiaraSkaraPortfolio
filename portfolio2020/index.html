@@ -1,0 +1,311 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liara Skara</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Montserrat&family=Orbitron:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase.js"></script>
+    <link rel="icon" href="Images/iconLiaraXsmallsquare.png" sizes="64x64" type="image/png">
+</head>
+<body>
+    <div class="container"></div>
+        <div class="nav-wrapper">
+
+            <div class="left-side">
+                <div class="nav-link-wrapper">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+
+                </div>
+            
+                <input type="checkbox" id="toggle"/>
+                    <label class="toggle-container" for="toggle">
+                        <span class="button button-toggle"></span>        
+                    </label>
+                <nav class="nav">
+                    <a class="nav-item" href="index.html">Home</a>
+                    <a class="nav-item" href="about.html">About</a>
+                    <a class="nav-item" href="contact.html">Contact</a>
+                </nav>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div id="brandName">Liara <span id="brandSpan">Skara</span></div>
+                    <img src="Images/LiaraKleinformaat.png" id="LiaraLogo">
+                </div>
+                <div class="discriptionAtLogo">Web Developer</div>
+            </div>
+
+        </div>
+        
+        <!-- <div class="content-wrapper"> -->
+        <div class="portfolio-items-wrapper">
+            <div class="leftNav">
+                <div class="nav-link-wrapper">
+                    <div id="hoverHome">
+                        <a href="index.html">
+                        <img class="AthomeIcon"src="Images/AtHomeIcon.png" style="width: 130px; height: 60px;" alt="Home"></a>
+                    </div>
+                    <div class="clickHome"><a href="index.html">Home</a></div>
+                    
+                    <div id="hoverAbout">
+                        <a href="about.html">
+                        <img class="aboutIcon"src="Images/aboutIconpng.png" style="width: 150px; height: 72px;" alt="About"></a>  
+                    </div>
+                    <div class="clickAbout"><a href="about.html">About</a></div>
+                    <div id="hoverContact">
+                        <a href="contact.html">
+                        <img class="messageIcon"src="Images/messageIcon.png" style="width: 183px; height: 90px;" alt="Contact"></a>
+                    </div>
+                    <div class="clickContact"><a href="contact.html">Contact</a></div>                
+                </div>
+
+                <div class="contactIconsContactPage">
+                    <a href="https://github.com/Skaralo?tab=repositories" >
+                    <i class="fab fa-github fa-3x"></i></a>  
+                    <div class="emailIcon">
+                        <i class="fas fa-envelope fa-3x"></i>
+                    </div>
+                    <div class="emailAddress">Liaraskara@gmail.com</div>
+                </div>
+           </div>
+
+            <div id="swup" class="transition-mainContent">
+                <!-- <div class="pageTitle" id="pageTitleWork"><h5>Work<h5></div> -->
+
+                <div class="item-wrapper">
+                    <div class="portfolio-img-background" id="img1" style="background-image:url(Images/PClock.png)"></div>
+                        <div class="img-text-wrapper" id="item-text-wrapper1">
+                            <!-- <div class="logo-wrapper">
+                                <img src="Images/logo-unsplash.png" width="100" height="100">
+                            </div> -->
+                            <div id="contactButtonHome"><a href="contact.html">Contact</a></div>
+                            <div class="titleWork" id="titleWork1">Pomodoro Clock</div>
+                            <div class="subtitle" id="subtitle1">
+                                The<button class="portfolioBtn" id="portfolioBtn1">Pomodoro Technique</button>is a time management method. It uses a timer to break work into intervals, traditionally 25 minutes in length, separated by short breaks. Each interval is known as a pomodoro, from the Italian word for 'tomato', after the tomato-shaped kitchen timer.
+                            </div>
+                        </div>
+                </div>
+                <div class="modal" id="modal">
+                    <span id="close">&times;</span>
+                    <div class="projectTitle">Pomodoro Clock</div>
+                    <div class="projectGallery">
+                        <img class="galleryImage" id="gallery1Img1" src="Images/PomClockPhoneImg.png" style="width: 99.9px; height: 188px; margin-bottom: 132px; margin-left: 180px; margin-right: 90px;">
+                        <!-- <img class="galleryImage" src="Images/pomClockLaptopIm.png" style="width: 198px; height: 99px;"> -->
+                        <img class="galleryImage" id="gallery1Img2" src="Images/pomClockLaptopIm.png" style="width: 270px; height: 195.9px; margin-bottom: 120px; margin-left: 90px; margin-right: 90px;">
+                    </div>
+                    <!-- <div class="projectGallerymobile">
+                        <img class="galleryImageMobile" src="Images/PomclockPhone.png" style="width: 91px; height: 207px;">
+                        <img class="galleryImageMobile" src="Images/PomclockPhone.png" style="width: 91px; height: 207px;">
+                    </div> -->
+                    <table id="tableHHH">
+                        <tr class="ProjectHeader" id="projectHeader1">
+                            <th class="colomn1">Role</th>
+                            <th class="colomn2">Goal</th>
+                            <th class="colomn3">Solution</th>
+                        </tr>              
+                    <div class="borderHeader" id="borderHeader1"></div>                 
+                        <tr class="projectDetails" id="project1Details1">
+                            <th class="colomn1">Web <br>Development</th>
+                            <th class="colomn2">User can set and start any intervallength</th>
+                            <th class="colomn3">Set and start functions</th>
+                        </tr>
+                        <tr class="projectDetails2" id="project1Details2">
+                            <th class="colomn1">Design</th>
+                            <th class="colomn2">User can set any pause length</th>
+                            <th class="colomn3">Pause and reset functions</th>
+                        </tr>
+                        <tr class="projectDetails3" id="project1Details3">
+                            <th class="colomn1"></th>
+                            <th class="colomn2">User can pause and reset</th>
+                            <th class="colomn3"></th>
+                        </tr>
+                    </table>
+                   
+                    <div class="projectLanguages" id="projectLanguagesPr1">
+                        <div class="language">HTML</div>
+                        <div class="language">CSS</div>
+                        <div class="language">Javascript</div>
+                    </div>
+                    <a class="projectLink" href="https://github.com/Skaralo/PomodoroClock/commit/b34c02951a17681adf3f05e71d412dbd24c585cb"><span class="websiteLink">See code at Github</span></a>
+                  </div>
+
+                <div class="item-wrapper" id="itemWrapper1">
+                    <div class="portfolio-img-background" style="background-image:url(Images/p6.png)"></div>
+                    <div class="img-text-wrapper">
+                        <!-- <div class="logo-wrapper">
+                            <img src="Images/logo-unsplash.png" width="100" height="100">
+                        </div> -->
+                        <div class="titleWork">Portfolio website</div>
+                        <div class="subtitle" id="subtitle2">
+                            The<button class="portfolioBtn" id="portfolioBtn2">Handige Helpende Handjes</button>helps out people with all kinds of home improvement jobs at their house.
+                        </div>
+                    </div>
+                </div>
+                <div class="modal2" id="modal2">
+                    <span id="close2">&times;</span>
+                    <div class="projectTitle" id="titleHandige">Handige Helpende Handjes</div>
+                    <div class="projectGallery">
+                        <img class="galleryImage" id="gallery2Img1" src="Images/PomClockPhoneImg.png" style="width: 99.9px; height: 188px;">
+                        <img class="galleryImage" id="gallery2Img2" src="Images/pomClockLaptopIm.png" style="width: 270px; height: 195.9px;">
+                        <!-- <img class="galleryImage" id="gallery2Img3" src="Images/PomclockPhone.png" style="width: 111px; height: 207px;"> -->
+                    </div>
+                    <table id="tableHHH">
+                        <tr class="ProjectHeader" id="projectHeader2" >
+                            <th class="colomn1">Role</th>
+                            <th class="colomn2">Goal</th>
+                            <th class="colomn3">Solution</th>
+                        </tr>              
+                    <div class="borderHeader" id="borderHeader2"></div>                 
+                        <tr class="projectDetails" id="project2Details1">
+                            <th class="colomn1">Web <br>Development</th>
+                            <th class="colomn2">Portfolio website</th>
+                            <th class="colomn3">Gallery with search and filters</th>
+                        </tr>
+                        <tr class="projectDetails2" id="project2Details2">
+                            <th class="colomn1">Design</th>
+                            <th class="colomn2">Online payments</th>
+                            <th class="colomn3">Solution</th>
+                        </tr>
+                        <tr class="projectDetails3" id="project2Details3">
+                            <th class="colomn1"></th>
+                            <th class="colomn2">Responsive on all devices</th>
+                            <th class="colomn3">Solution</th>
+                        </tr>
+                        <!-- <tr class="projectDetails4" id="project2Details4">
+                            <th class="colomn1"></th>
+                            <th class="colomn2"></th>
+                            <th class="colomn3">leoo ouo uouhj</th>
+                        </tr> -->
+                    </table>
+                   
+                    <div class="projectLanguages" id="projectLanguagesPr2">
+                        <div class="language">HTML</div>
+                        <div class="language">CSS</div>
+                        <div class="language">Javascript</div>
+                        <div class="language">Paint 3D</div>
+                    </div>
+                    <a class="projectLink" href="https://"><span class="websiteLink">Handigehelpendehandjes.nl</span></a>
+                </div>
+               
+                <div class="item-wrapper">
+                    <div class="portfolio-img-background" id="img3" style="background-image:url(Images/formAPI.png)"></div>
+                    <div class="img-text-wrapper">
+                        <!-- <div class="logo-wrapper">
+                            <img src="Images/logo-unsplash.png" width="100" height="100">
+                        </div> -->
+                        <div class="titleWork">Form with autofill</div>
+                        <div class="subtitle" id="subtitle3">
+                            This<button class="portfolioBtn" id="portfolioBtn3">form with autofill</button> helps the user to same time by automatically filling up certain address fields.
+                        </div>
+                    </div>
+                </div>
+                <div class="modal3" id="modal3">
+                    <span id="close3">&times;</span>
+                    <div class="projectTitle">Form with autofill</div>
+                    <div class="projectGalleryNoTransform">
+                        <!-- <img class="galleryImage" id="gallery3Img1" src="Images/PomClockPhoneImg.png" style="width: 99.9px; height: 188px;"> -->
+                        <img class="galleryImage" id="gallery3Img2" src="Images/formAPILapt.png" style="width: 270px; height: 195.9px;">
+                        <!-- <img class="galleryImage" id="gallery3Img3" src="Images/PomclockPhone.png" style="width: 99.9px; height: 188px;"> -->
+                    </div>
+                    <table id="tableHHH">
+                        <tr class="ProjectHeader" id="projectHeader3">
+                            <th class="colomn1">Role</th>
+                            <th class="colomn2">Goal</th>
+                            <th class="colomn3">Solution</th>
+                        </tr>              
+                    <div class="borderHeader" id="borderHeader3"></div>                 
+                        <tr class="projectDetails" id="project3Details1">
+                            <th class="colomn1">Web <br>Development</th>
+                            <th class="colomn2">Save user time in form with autofill</th>
+                            <th class="colomn3">Form with input check and feedback</th>
+                        </tr>
+                        <tr class="projectDetails2" id="project3Details2">
+                            <th class="colomn1">Design</th>
+                            <th class="colomn2"></th>
+                            <th class="colomn3">Address fields with autofill</th>
+                        </tr>
+                        <tr class="projectDetails3" id="project3Details3">
+                            <th class="colomn1"></th>
+                            <th class="colomn2"></th>
+                            <th class="colomn3"></th>
+                        </tr>
+                        <!-- <tr class="projectDetails4" id="project2Details4">
+                            <th class="colomn1"></th>
+                            <th class="colomn2"></th>
+                            <th class="colomn3">leoo ouo uouhj</th>
+                        </tr> -->
+                    </table>
+                   
+                    <div class="projectLanguages" id="projectLanguagesPr3">
+                        <div class="language">HTML</div>
+                        <div class="language">CSS</div>
+                        <div class="language">Javascript</div>
+                    </div>
+                    <a class="projectLink" href="https://github.com/Skaralo/FormValidationWithPostalcodeAPI/commit/c48ade6fcf7c139edeb2b7a972bb9f586d761331"><span class="websiteLink">See code at Github</span></a>
+                </div>
+
+                <div class="item-wrapper">
+                    <div class="portfolio-img-background" id="img4" style="background-image:url(Images/code.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <!-- <div class="logo-wrapper">
+                            <img src="Images/logo-unsplash.png" width="100" height="100">
+                        </div> -->
+                        <div class="titleWork" id="titlework4" ><h5>Under construction</h5></div>
+                        <div class="subtitle" id="subtitle4">
+                            <!-- Lorem ipsum dolor Lorem ipsum dolor <a class="portfolioLink" id="portfolioBtn4" href="http://www.liaraskara.com/">Lalala</a> sitadipisicingdunt dolor id explica Quidem nesciunt nulla perspiciatis id nihil. Susciciatis distinctio! -->
+                        </div>
+                    </div>
+                </div>
+                <div class="item-wrapper">
+                    <div class="portfolio-img-background" id="img5" style="background-image:url(Images/code.jpg)"></div>
+                    <div class="img-text-wrapper">
+                        <!-- <div class="logo-wrapper">
+                            <img src="Images/logo-unsplash.png" width="100" height="100">
+                        </div> -->
+                        <div class="titleWork" id="titlework5"><h5>Under construction</h5></div>
+                        <div class="subtitle" id="subtitle5">
+                            <!-- Lorem Lorem ipsum dolor <a class="portfolioLink" id="portfolioBtn5" href="http://www.liaraskara.com/">Lalala</a> ir id explica Quidem nesciunt nulla perspiciatis id nihil. Susciciatis distinctio! -->
+                        </div>
+                    </div>
+                </div>
+                <div class="item-wrapper">
+                    <div class="portfolio-img-background" id="img6" style="background-image:url(Images/code.jpg"></div>
+                    <div class="img-text-wrapper">
+                        <!-- <div class="logo-wrapper">
+                            <img src="Images/logo-unsplash.png" width="100" height="100">
+                        </div> -->
+                        <div class="titleWork" id="titlework6"><h5>Under construction</h5></div>
+                        <div class="subtitle" id="subtitle6">
+                            <!-- Lorem ipsum Lorem ipsum dolor <a class="portfolioLink" id="portfolioBtn6" href="http://www.liaraskara.com/">Lalala</a> d eatis id nihil. Susciciatis distinctio! -->
+                        </div>
+                    </div>  
+                </div>
+            </div>
+            <footer id="footerHomepage">
+                <div class="rights">
+                    Made with
+                    <span id="heart">♡</span> 
+                       <span id="rightsSpan">by Liara Skara, 2022</span></div>
+            <!-- <div class="contactInfo">
+            <p><i class='fas fa-phone-alt'></i>  +31 6 26 799 409</p> 
+            <a><i class='fa fa-home fa-2x'></i></a>
+            <a><i class='fa fa-envelope fa-2x'></i></a>
+            <a><i class="fab fa-github fa-2x"></i></a>
+            </div> -->
+            </footer>
+        </div>
+    </div>
+    <!-- <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>   -->
+<script src="myscript.js"></script>
+</body>
+</html>
